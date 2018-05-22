@@ -9,42 +9,42 @@ public class RoshamboTest {
     @Test
     public void comparePlayers_returnsWinnerOfRockVSPaper_player2() throws Exception {
         Roshambo testRoshambo = new Roshambo();
-        String expected = "player2";
+        String expected = "Player 2 wins";
         assertEquals(expected, testRoshambo.comparePlayers("r", "p"));
     }
 
     @Test
     public void comparePlayers_returnsWinnerOfRockVSPaper_player1() throws Exception {
         Roshambo testRoshambo = new Roshambo();
-        String expected = "player1";
+        String expected = "Player 1 wins";
         assertEquals(expected, testRoshambo.comparePlayers("p", "r"));
     }
 
     @Test
     public void comparePlayers_returnsWinnerOfScissorsVSPaper_player1() throws Exception {
         Roshambo testRoshambo = new Roshambo();
-        String expected = "player1";
+        String expected = "Player 1 wins";
         assertEquals(expected, testRoshambo.comparePlayers("s", "p"));
     }
 
     @Test
     public void comparePlayers_returnsWinnerOfScissorsVSPaper_player2() throws Exception {
         Roshambo testRoshambo = new Roshambo();
-        String expected = "player2";
+        String expected = "Player 2 wins";
         assertEquals(expected, testRoshambo.comparePlayers("p", "s"));
     }
 
     @Test
     public void comparePlayers_returnsWinnerOfScissorsVSRock_player1() throws Exception {
         Roshambo testRoshambo = new Roshambo();
-        String expected = "player1";
+        String expected = "Player 1 wins";
         assertEquals(expected, testRoshambo.comparePlayers("r", "s"));
     }
 
     @Test
     public void comparePlayers_returnsWinnerOfScissorsVSRock_player2() throws Exception {
         Roshambo testRoshambo = new Roshambo();
-        String expected = "player2";
+        String expected = "Player 2 wins";
         assertEquals(expected, testRoshambo.comparePlayers("s", "r"));
     }
 

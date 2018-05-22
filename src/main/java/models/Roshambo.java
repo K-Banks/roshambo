@@ -8,12 +8,12 @@ public class Roshambo {
 
     public String comparePlayers(String player1Choice, String player2Choice) {
         Map<String, String> answerMap = new HashMap<String, String>();
-        answerMap.put("rp", "player2");
-        answerMap.put("rs", "player1");
-        answerMap.put("pr", "player1");
-        answerMap.put("ps", "player2");
-        answerMap.put("sr", "player2");
-        answerMap.put("sp", "player1");
+        answerMap.put("rp", "Player 2 wins");
+        answerMap.put("rs", "Player 1 wins");
+        answerMap.put("pr", "Player 1 wins");
+        answerMap.put("ps", "Player 2 wins");
+        answerMap.put("sr", "Player 2 wins");
+        answerMap.put("sp", "Player 1 wins");
 
         if(player1Choice.equals(player2Choice)){
             return "Draw";
